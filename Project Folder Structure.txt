@@ -1,0 +1,37 @@
+
+LOLA_AI_Project/
+├── lola/                     # Interface Layer
+│   ├── text_webui/           # Existing Text WebUI (Running on CPU)
+│   │   ├── app.py
+│   │   ├── templates/
+│   │   └── static/
+│   ├── interface_manager.py  # Manages input/output routing
+│   └── api_gateway.py        # API layer for future integrations
+├── thierry/                  # Reasoning Engine
+│   ├── decision_engine.py    # Core logic for context-aware reasoning
+│   ├── memory_manager.py     # Long-term & short-term memory
+│   └── context_analyzer.py   # Understands ongoing conversations
+├── connie/                   # Learning & Data Processing Unit
+│   ├── data_ingestion.py     # Ingests data from MICHAEL
+│   ├── ml_models/
+│   │   ├── model_trainer.py  # Model training scripts
+│   │   └── semantic_analyzer.py  # NLP and pattern recognition
+│   └── feedback_loop.py      # Continuous learning from user interactions
+├── michael/                  # Data Connector & Integrator
+│   ├── api_manager.py        # Handles API connections (e.g., Facebook, Google)
+│   ├── data_sync.py          # Syncs data between sources and LOLA
+│   └── network_connector.py  # Manages real-time data streams
+├── data/                     # Data Storage
+│   ├── raw/                  # Raw data from external sources
+│   ├── processed/            # Cleaned, structured data
+│   ├── backups/              # Automated backups
+│   └── user_memory.db        # Main database for long-term storage
+├── config/                   # Configuration Files
+│   └── settings.json
+├── scripts/                  # Automation Scripts (backups, maintenance, etc.)
+│   ├── auto_backup.py
+│   └── data_monitor.py
+├── logs/                     # System and error logs
+│   ├── interaction_logs.txt
+│   └── error_logs.txt
+└── main.py                   # Entry Point to Run the System
